@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: show env vars
       run: printenv
+    - name: Check out code
+      uses: actions/checkout@master
     - name: show current folder
       run: ls
     - name: show everything

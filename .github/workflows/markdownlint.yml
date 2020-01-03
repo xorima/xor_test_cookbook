@@ -13,7 +13,7 @@ jobs:
     - name: Install Chef
       run: | 
         curl -L https://omnitruck.chef.io/install.sh |
-        sudo bash -s -- -c stable -P chefworkstation
+        sudo bash -s -- -c stable -P chef-workstation
       env:
         CHEF_LICENSE: accept-no-persist
     - name: Run markdown lint

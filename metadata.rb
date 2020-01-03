@@ -1,11 +1,9 @@
-name              'sc_vscode'
-maintainer        'Sous Chefs'
-maintainer_email  'help@sous-chefs.org'
+name              'xor_test_cookbook'
+maintainer        'Xorima'
+maintainer_email  'donotuse'
 license           'Apache-2.0'
-description       'Installs and manages Visual Studio Code Extensions'
-source_url        'https://github.com/sous-chefs/vscode'
-issues_url        'https://github.com/sous-chefs/vscode/issues'
-chef_version      '>= 13.0'
+description       'Do not use!'
+chef_version      '>= 55.0'
 version           '1.0.1'
 
 %w(ubuntu redhat centos fedora).each do |os|

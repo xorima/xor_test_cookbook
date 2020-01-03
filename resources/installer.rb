@@ -11,6 +11,7 @@ action :install do
       enabled     true
       gpgcheck    true
       gpgkey      signing_key
+      unknown     "property"
     end
 
   when 'debian'

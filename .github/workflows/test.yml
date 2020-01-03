@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: show env vars
+      run: printenv
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Run a multi-line script
@@ -15,5 +17,7 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - name: Run delivery
-      run: chef exec delivery local all
-      uses: docker://chef/chefworkstation
+      run: | 
+        curl -L https://omnitruck.chef.io/install.sh |
+        sudo bash -s -- -c stable -P chefdk
+        chef exec delivery local all

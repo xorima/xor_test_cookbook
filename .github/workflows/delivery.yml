@@ -1,0 +1,22 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Install Chef
+      run: | 
+        curl -L https://omnitruck.chef.io/install.sh |
+        sudo bash -s -- -c stable -P chefdk
+      env:
+        CHEF_LICENSE: accept-no-persist
+    - name: Run delivery
+      run: chef exec delivery local all
+      env:
+        CHEF_LICENSE: accept-no-persist

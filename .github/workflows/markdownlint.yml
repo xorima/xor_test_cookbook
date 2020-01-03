@@ -8,22 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: show env vars
-      run: printenv
     - name: Check out code
       uses: actions/checkout@master
-    - name: show current folder
-      run: ls
-    - name: show everything
-      run: ls -la ./*
     - name: Install Chef
       run: | 
         curl -L https://omnitruck.chef.io/install.sh |
         sudo bash -s -- -c stable -P chefdk
       env:
         CHEF_LICENSE: accept-no-persist
-
-    - name: Run delivery
-      run: chef exec delivery local all
+    - name: Run markdown lint
+      run: chef exec mdl ./
       env:
         CHEF_LICENSE: accept-no-persist

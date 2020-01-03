@@ -21,3 +21,5 @@ jobs:
         curl -L https://omnitruck.chef.io/install.sh |
         sudo bash -s -- -c stable -P chefdk
         chef exec delivery local all
+      env:
+        CHEF_LICENSE: accept-no-persist

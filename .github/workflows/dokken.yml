@@ -1,9 +1,9 @@
-name: CI
+name: kitchen
 
 on: [pull_request]
 
 jobs:
-  build:
+  dokken:
 
     runs-on: ubuntu-latest
 
@@ -12,3 +12,15 @@ jobs:
       uses: actions/checkout@master
     - name: Test docker exists
       run: docker ps
+    - name: Install Chef
+      run: | 
+        curl -L https://omnitruck.chef.io/install.sh |
+        sudo bash -s -- -c stable -P chefdk
+      env:
+        CHEF_LICENSE: accept-no-persist
+    - name: run dokken
+      run: |
+        kitchen test centos-7
+      env:
+        KITCHEN_LOCAL_YAML: kitchen.dokken.yml
+        CHEF_LICENSE: "accept-no-persist"

@@ -1,9 +1,9 @@
-name: CI
+name: lint
 
 on: [pull_request]
 
 jobs:
-  build:
+  mdl:
 
     runs-on: ubuntu-latest
 
@@ -13,7 +13,7 @@ jobs:
     - name: Install Chef
       run: | 
         curl -L https://omnitruck.chef.io/install.sh |
-        sudo bash -s -- -c stable -P chefdk
+        sudo bash -s -- -c stable -P chefworkstation
       env:
         CHEF_LICENSE: accept-no-persist
     - name: Run markdown lint

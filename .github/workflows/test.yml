@@ -10,17 +10,18 @@ jobs:
     steps:
     - name: show env vars
       run: printenv
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - name: Run delivery
+    - name: show current folder
+      run: ls
+    - name: show everything
+      run: ls -la ./*
+    - name: Install Chef
       run: | 
         curl -L https://omnitruck.chef.io/install.sh |
         sudo bash -s -- -c stable -P chefdk
-        git init
-        chef exec delivery local all
+      env:
+        CHEF_LICENSE: accept-no-persist
+
+    - name: Run delivery
+      run: chef exec delivery local all
       env:
         CHEF_LICENSE: accept-no-persist

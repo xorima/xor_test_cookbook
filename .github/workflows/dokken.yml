@@ -10,6 +10,7 @@ jobs:
       matrix:
         os: ['debian-8', 'debian-9', 'centos-7', 'fedora-latest', 'ubuntu-1604', 'ubuntu-1804']
         suite: ['default']
+      fail-fast: false
 
     steps:
     - name: Check out code
@@ -22,7 +23,7 @@ jobs:
         CHEF_LICENSE: accept-no-persist
     - name: run dokken
       run: |
-        kitchen test ${{ matrix.suite }}${{ matrix.os }}
+        kitchen test ${{ matrix.suite }}-${{ matrix.os }}
       env:
         KITCHEN_LOCAL_YAML: kitchen.dokken.yml
         CHEF_LICENSE: "accept-no-persist"

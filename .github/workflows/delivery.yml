@@ -11,6 +11,6 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Run Delivery
-      uses: actions/checkout@master
+      uses: Xorima/chef-delivery@master
       env:
         CHEF_LICENSE: accept-no-persist

@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Run Delivery
+    - name: Run Chef Delivery
       uses: Xorima/chef-delivery@master
       env:
         CHEF_LICENSE: accept-no-persist

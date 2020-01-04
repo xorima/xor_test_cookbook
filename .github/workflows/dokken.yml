@@ -6,12 +6,14 @@ jobs:
   dokken:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: ['debian-8', 'debian-9', 'centos-7', 'fedora-latest', 'ubuntu-1604', 'ubuntu-1804']
+        suite: ['default']
 
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Test docker exists
-      run: docker ps
     - name: Install Chef
       run: | 
         curl -L https://omnitruck.chef.io/install.sh |
@@ -20,7 +22,7 @@ jobs:
         CHEF_LICENSE: accept-no-persist
     - name: run dokken
       run: |
-        kitchen test centos-7
+        kitchen test ${{ matrix.suite }}${{ matrix.os }}
       env:
         KITCHEN_LOCAL_YAML: kitchen.dokken.yml
         CHEF_LICENSE: "accept-no-persist"

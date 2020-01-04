@@ -8,19 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: ['debian-8']
-        #, 'debian-9', 'centos-7', 'fedora-latest', 'ubuntu-1604', 'ubuntu-1804'
+        os: ['debian-8', 'debian-9', 'centos-7', 'fedora-latest', 'ubuntu-1604', 'ubuntu-1804']
         suite: ['default']
-      fail-fast: true
+      fail-fast: false
 
     steps:
     - name: Check out code
       uses: actions/checkout@master
     - name: Install Chef
-      uses: actionshub/chef-install@creation
-      # run: | 
-      #   curl -L https://omnitruck.chef.io/install.sh |
-      #   sudo bash -s -- -c stable -P chefdk
+      uses: actionshub/chef-install@master
     - name: run dokken
       run: |  
         kitchen test ${{ matrix.suite }}-${{ matrix.os }}

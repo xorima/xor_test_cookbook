@@ -17,10 +17,8 @@ jobs:
       uses: actions/checkout@master
     - name: Install Chef
       uses: actionshub/chef-install@master
-    - name: run dokken
-      run: |  
-        kitchen test ${{ matrix.suite }}-${{ matrix.os }}
+    - name: Install Chef
+      uses: actionshub/chef-install@master
       env:
-        KITCHEN_LOCAL_YAML: kitchen.dokken.yml
-        CHEF_LICENSE: "accept-no-persist"
- 
+        suite: ${{ matrix.suite }}
+        os: ${{ matrix.os }}

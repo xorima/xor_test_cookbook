@@ -21,7 +21,7 @@ jobs:
       #   curl -L https://omnitruck.chef.io/install.sh |
       #   sudo bash -s -- -c stable -P chefdk
     - name: run dokken
-      run: |
+      run: | 
         kitchen test ${{ matrix.suite }}-${{ matrix.os }}
       env:
         KITCHEN_LOCAL_YAML: kitchen.dokken.yml

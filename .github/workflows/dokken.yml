@@ -28,4 +28,3 @@ jobs:
         KITCHEN_LOCAL_YAML: kitchen.dokken.yml
         CHEF_LICENSE: "accept-no-persist"
 
-        

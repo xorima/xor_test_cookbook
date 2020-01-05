@@ -1,14 +1,13 @@
+---
 name: yamllint
 
 on: [pull_request]
 
 jobs:
-  mdl:
-
+  yamllint:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out code
-      uses: actions/checkout@master
-    - name: Run yaml Lint
-      uses: actionshub/yamllint@master
+      - name: Check out code
+        uses: actions/checkout@master
+      - name: Run yaml Lint
+        uses: actionshub/yamllint@master

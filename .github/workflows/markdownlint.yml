@@ -1,3 +1,4 @@
+---
 name: lint
 
 on: [pull_request]
@@ -8,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out code
-      uses: actions/checkout@master
-    - name: Run Markdown Lint
-      uses: actionshub/markdownlint@master
+      - name: Check out code
+        uses: actions/checkout@master
+      - name: Run Markdown Lint
+        uses: actionshub/markdownlint@master

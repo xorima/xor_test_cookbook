@@ -8,6 +8,15 @@ on:
       - master
 
 jobs:
+  danger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@master
+      - name: Run Danger
+        uses: actionshub/danger-rb@master
+        env:
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   delivery:
     runs-on: ubuntu-latest
     steps:
@@ -62,9 +71,3 @@ jobs:
           os: ${{ matrix.os }}
           CHEF_LICENSE: accept-no-persist
           KITCHEN_LOCAL_YAML: kitchen.dokken.yml
-  final:
-    needs: [dokken]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@master

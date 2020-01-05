@@ -11,8 +11,11 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@master
-      - name: Check out code
+      - name: test-action
         uses: Xorima/test-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENDPOINT_URI: test
       - name: Run Chef Delivery
         uses: actionshub/chef-delivery@master
         env:

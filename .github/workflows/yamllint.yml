@@ -1,4 +1,4 @@
-name: lint
+name: yamllint
 
 on: [pull_request]
 
@@ -10,5 +10,5 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Run Markdown Lint
-      uses: actionshub/markdownlint@master
+    - name: Run yaml Lint
+      uses: actionshub/yamllint@master

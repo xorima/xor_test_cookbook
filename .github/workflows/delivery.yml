@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@master
+      - name: Check out code
+        uses: Xorima/test-action@master
       - name: Run Chef Delivery
         uses: actionshub/chef-delivery@master
         env:

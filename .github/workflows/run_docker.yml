@@ -15,4 +15,5 @@
           uses: Xorima/test-action@master
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            ENDPOINT_URI: https://yuaiyf.free.beeceptor.com
+            ENDPOINT_URI: https://bugs.sangabriel.co.uk
+

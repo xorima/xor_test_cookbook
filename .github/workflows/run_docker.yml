@@ -16,4 +16,5 @@
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             ENDPOINT_URI: https://bugs.sangabriel.co.uk
+            Logging_lebel: DEBUG
 

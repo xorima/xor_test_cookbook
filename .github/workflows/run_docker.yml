@@ -15,6 +15,6 @@
           uses: Xorima/test-action@master
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            ENDPOINT_URI: http://ptsv2.com/t/dap1b-1579954125
+            ENDPOINT_URI: http://ptsv2.com/t/dap1b-1579954125/post
             Logging_level: DEBUG
 

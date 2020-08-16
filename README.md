@@ -20,8 +20,3 @@ Provides a set of resources to aid in the installation and management of vscode 
 
 - [extension](https://github.com/sous-chefs/vscode/blob/master/documentation/sc_vscode_extension.md)
 - [install](https://github.com/sous-chefs/vscode/blob/master/documentation/sc_vscode_installer.md)
-aaaaaaa
-ssssss
-aaaaaa
-aaaaaa
-fffffffff

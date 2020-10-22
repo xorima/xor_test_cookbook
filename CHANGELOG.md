@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
+## unreleased
+
+- Added 'Testing stuff'
+
 ## 1.0.1
 
 - Added `.gitattributes` to ensure `lf` line endings

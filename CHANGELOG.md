@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
+## Unreleased
+
+- my new awesome feature
+
 ## 1.2.3 - *2020-10-22*
 
 - Added 'Testing stuff'

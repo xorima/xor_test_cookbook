@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
-## Unreleased
+## 2.1.0 - *2020-10-23*
 
 - This new feature
 

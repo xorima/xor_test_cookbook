@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
+## Unreleased
+
+- This new feature
+
 ## 2.0.0 - *2020-10-23*
 
 End to end flow

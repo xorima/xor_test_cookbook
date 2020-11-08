@@ -5,7 +5,8 @@ This file is used to list changes made in each version of the git_checkout cookb
 ## Unreleased
 
 
-- Added 'Testing stuff'
+- Added 'Testing stuff' 
+- More tests
 
 ## 3.2.0 - *2020-10-25*
 

@@ -6,6 +6,11 @@ This file is used to list changes made in each version of the git_checkout cookb
 
 - Testing more
 
+## 3.13.0 - *2020-11-15*
+
+- Testing auto release works as expected.
+- Added webhooks
+
 ## 3.9.0 - *2020-11-08*
 
 - Testing for race

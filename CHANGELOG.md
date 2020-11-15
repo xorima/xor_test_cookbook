@@ -2,7 +2,11 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
-## 3.9.0 - *2020-11-08* 
+## Unreleased
+
+- Testing auto release works as expected.
+
+## 3.9.0 - *2020-11-08*
 
 - Testing for race
 
@@ -13,7 +17,7 @@ This file is used to list changes made in each version of the git_checkout cookb
 ## 3.6.0 - *2020-11-08*
 
 
-- Added 'Testing stuff' 
+- Added 'Testing stuff'
 - More tests
 
 ## 3.2.0 - *2020-10-25*
@@ -23,7 +27,7 @@ This file is used to list changes made in each version of the git_checkout cookb
 ## 3.1.0 - *2020-10-25*
 
 
-## 2.2.0 - *2020-10-23* 
+## 2.2.0 - *2020-10-23*
 
 - another one
 

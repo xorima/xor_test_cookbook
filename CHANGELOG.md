@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
-## Unreleased
+## 3.17.0 - *2020-11-16*
 
 - Showing Damacus how to be lazy
 

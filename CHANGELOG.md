@@ -2,12 +2,16 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
-## 4.0.0 - *2020-11-17*
+## Unreleased
 
 - Xorima has setup notification to slack
 - Sous-Chefs can now have auto-releasing
 - This should appear in slack without any human intervention
 - Wahoo!
+
+## 4.0.0 - *2020-11-17*
+
+- This already existed.
 
 ## 3.18.0 - *2020-11-17*
 

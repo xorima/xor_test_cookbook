@@ -4,7 +4,7 @@ maintainer_email  'donotuse'
 license           'Apache-2.0'
 description       'Do not use!'
 chef_version      '>= 55.0'
-version           '4.0.0'
+version           '5.0.0'
 
 %w(ubuntu redhat centos fedora).each do |os|
   supports os

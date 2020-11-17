@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
+## Unreleased
+
+- Xorima has setup notification to slack
+- Sous-Chefs can now have auto-releasing
+- This should appear in slack without any human intervention
+- Wahoo!
+
 ## 3.18.0 - *2020-11-17*
 
 - testing deployment_status api

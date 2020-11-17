@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
-## Unreleased
+## 3.18.0 - *2020-11-17*
 
 - testing deployment_status api
 

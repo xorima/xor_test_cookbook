@@ -4,7 +4,9 @@ This file is used to list changes made in each version of the git_checkout cookb
 
 ## Unreleased
 
-## 5.1.0 - *2020-11-18*
+- testing tag cloning
+
+## 5.1.0 - *2020-11-18*0
 
 - Testing cookbook release validator
 

@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of the git_checkout cookbook.
 
+## Unreleased
+
 ## 5.2.0 - *2020-11-18*
 
 - testing tag cloning
